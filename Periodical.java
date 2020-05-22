@@ -2,8 +2,8 @@ package LabLibrary;
 
 public class Periodical extends LibraryItem {
     public Periodical(int publishYear, String title, String author, String genre, String ageGroup, boolean isAvailable,
-            boolean isFactual) {
-        super(publishYear, title, author, genre, ageGroup, isAvailable, isFactual);
+            boolean isFact) {
+        super(publishYear, title, author, genre, ageGroup, isAvailable, isFact);
     }
 
     private boolean hasColorImg;
@@ -18,9 +18,10 @@ public class Periodical extends LibraryItem {
 
     public void LibraryItem(boolean hasColorImg) {
         if (hasColorImg) {
-            System.out.println("A magazine");
+            System.out.println("Magazine");
         } else {
-            System.out.println("A newspaper");
+            System.out.println("Newspaper");
         }
     }
+
 }

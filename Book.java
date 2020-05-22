@@ -18,11 +18,11 @@ public class Book extends LibraryItem {
     }
 
     public void LibraryItem(int numOfPages) {
-        if (numOfPages < 20)
+        if (numOfPages < 50)
 
         {
-            setAgeGroup("Child book");
-        } else if (numOfPages > 20) {
+            setAgeGroup("Childrens book");
+        } else if (numOfPages > 50) {
             setAgeGroup("Adult book");
         } else {
             System.out.println("We don't have any books left");

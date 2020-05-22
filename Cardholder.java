@@ -18,9 +18,9 @@ public class Cardholder extends LibraryItem {
 
     public void LibraryItem(boolean isCardholder) {
         if (isCardholder) {
-            System.out.println("You may rent books");
+            System.out.println("Would you like to check out a book?");
         } else {
-            System.out.println("You are not a member. Would you like to sign-up?");
+            System.out.println("Please signup for a membership");
         }
     }
 }

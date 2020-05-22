@@ -4,18 +4,18 @@ public class LibraryItem {
 
     private int publishYear;
     private String title, author, genre, ageGroup;
-    private boolean isAvailable, isFactual;
+    private boolean isAvailable, isFact;
 
     // constructor
     public LibraryItem(int publishYear, String title, String author, String genre, String ageGroup, boolean isAvailable,
-            boolean isFactual2) {
+            boolean isFact) {
         this.publishYear = publishYear;
         this.title = title;
         this.author = author;
         this.genre = genre;
         this.ageGroup = ageGroup;
         this.isAvailable = isAvailable;
-        this.isFactual = isFactual;
+        this.isFact = isFact;
     }
 
     // getters
@@ -44,8 +44,8 @@ public class LibraryItem {
         return isAvailable;
     }
 
-    public boolean getFactuality() {
-        return isFactual;
+    public boolean getFactual() {
+        return isFact;
     }
 
     // setters
@@ -75,16 +75,16 @@ public class LibraryItem {
     }
 
     public void setFactuality(boolean isFactual) {
-        this.isFactual = isFactual;
+        this.isFact = isFact;
     }
 
-    public LibraryItem(boolean isAvailable, boolean isFactual) {
+    public LibraryItem(boolean isAvailable, boolean isFact) {
         if (isAvailable) {
             System.out.println("Yes, the book " + getTitle() + " is available");
         } else {
             System.out.println("Sorry, " + getTitle() + " is not available");
         }
-        if (isFactual) {
+        if (isFact) {
             System.out.println("Reference book or Newspaper");
         } else {
             System.out.println("General book or Magazine");
@@ -98,3 +98,13 @@ public class LibraryItem {
     }
 
 }
+/*public interface Search {
+    public List<Book> searchByTitle(String title);
+    public List<Book> searchByAuthor(String author);
+    public List<Book> searchBySubject(String subject);
+    public List<Book> searchByPublishYear(Date publishYear);
+    public List<Book> searchByGenre(String Genre);
+    public List<Book> searchByAgeGroup(String ageGroup);
+    public List<Book> searchByisAvailable(boolean isAvailable );
+    public List<Book> searchByisFactual(boolean isFact);
+  } */
